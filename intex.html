@@ -1,0 +1,625 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Love Letter 💌</title>
+
+<style>
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: system-ui, Arial;
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(135deg, #ffd1dc, #fff0f5);
+  overflow: hidden;
+}
+
+/* container */
+.container {
+  width: min(420px, 92vw);
+  height: 280px;
+  position: relative;
+}
+
+/* envelope */
+.envelope {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  border-radius: 16px;
+  background: #fff;
+  box-shadow: 0 20px 50px rgba(0,0,0,0.15);
+  overflow: hidden;
+  cursor: pointer;
+}
+
+/* flap */
+.flap {
+  position: absolute;
+  width: 100%;
+  height: 55%;
+  background: linear-gradient(135deg, #ff8fab, #ff4d6d);
+  clip-path: polygon(0 0, 100% 0, 50% 100%);
+  top: 0;
+  z-index: 3;
+  transition: transform 0.8s ease;
+}
+
+/* seal */
+.seal {
+  position: absolute;
+  top: 45%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 58px;
+  height: 58px;
+  border-radius: 50%;
+  background: radial-gradient(circle at 30% 30%, #ff2e63, #7a001f);
+  z-index: 4;
+  transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+/* letter */
+.letter {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  background: white;
+  padding: 18px;
+  transform: translateY(100%);
+  transition: transform 0.9s ease;
+  overflow-y: auto;
+  z-index: 2;
+}
+
+h1 {
+  font-size: 20px;
+  color: #d6336c;
+  margin-bottom: 10px;
+}
+
+p {
+  font-size: 14px;
+  line-height: 1.6;
+  color: #333;
+}
+
+/* OPEN STATE */
+.container.open .letter {
+  transform: translateY(0%);
+}
+
+.container.open .flap {
+  transform: translateY(-100%);
+}
+
+.container.open .seal {
+  opacity: 0;
+  transform: translate(-50%, -120%);
+}
+</style>
+</head>
+
+<body>
+
+<!-- 🎵 MUSIC -->
+<audio id="bgMusic" loop preload="auto">
+  <source src="https://cdn.pixabay.com/download/audio/2022/03/15/audio_d5f3e8b9f7.mp3?filename=romantic-love-ambient-112191.mp3" type="audio/mpeg">
+</audio>
+
+<div class="container" onclick="openLetter()">
+
+  <div class="envelope">
+    <div class="flap"></div>
+    <div class="seal"></div>
+
+    <div class="letter">
+      <h1>My Love 💖</h1>
+      <p>
+        <!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Love Letter 💌</title>
+
+<style>
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: system-ui, Arial;
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(135deg, #ffd1dc, #fff0f5);
+  overflow: hidden;
+}
+
+/* container */
+.container {
+  width: min(420px, 92vw);
+  height: 280px;
+  position: relative;
+}
+
+/* envelope */
+.envelope {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  border-radius: 16px;
+  background: #fff;
+  box-shadow: 0 20px 50px rgba(0,0,0,0.15);
+  overflow: hidden;
+  cursor: pointer;
+}
+
+/* flap */
+.flap {
+  position: absolute;
+  width: 100%;
+  height: 55%;
+  background: linear-gradient(135deg, #ff8fab, #ff4d6d);
+  clip-path: polygon(0 0, 100% 0, 50% 100%);
+  top: 0;
+  z-index: 3;
+  transition: transform 0.8s ease;
+}
+
+/* seal */
+.seal {
+  position: absolute;
+  top: 45%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 58px;
+  height: 58px;
+  border-radius: 50%;
+  background: radial-gradient(circle at 30% 30%, #ff2e63, #7a001f);
+  z-index: 4;
+  transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+/* letter */
+.letter {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  background: white;
+  padding: 18px;
+  transform: translateY(100%);
+  transition: transform 0.9s ease;
+  overflow-y: auto;
+  z-index: 2;
+}
+
+h1 {
+  font-size: 20px;
+  color: #d6336c;
+  margin-bottom: 10px;
+}
+
+p {
+  font-size: 14px;
+  line-height: 1.6;
+  color: #333;
+}
+
+/* OPEN STATE */
+.container.open .letter {
+  transform: translateY(0%);
+}
+
+.container.open .flap {
+  transform: translateY(-100%);
+}
+
+.container.open .seal {
+  opacity: 0;
+  transform: translate(-50%, -120%);
+}
+</style>
+</head>
+
+<body>
+
+<!-- 🎵 MUSIC -->
+<audio id="bgMusic" loop preload="auto">
+  <source src="https://cdn.pixabay.com/download/audio/2022/03/15/audio_d5f3e8b9f7.mp3?filename=romantic-love-ambient-112191.mp3" type="audio/mpeg">
+</audio>
+
+<div class="container" onclick="openLetter()">
+
+  <div class="envelope">
+    <div class="flap"></div>
+    <div class="seal"></div>
+
+    <div class="letter">
+      <h1>My Love 💖</h1>
+      <p>
+        I don’t know how to explain this properly…<br><br>
+
+        But every time I think of you, everything feels calm and soft.<br><br>
+
+        You’re not just someone I like… you feel like my peace.<br><br>
+
+        If I could hold one moment forever, it would be this feeling right here.<br><br>
+
+        💌 Always yours.
+      </p>
+    </div>
+
+  </div>
+</div>
+
+<script>
+let opened = false;
+
+function openLetter() {
+  const container = document.querySelector(".container");
+  const music = document.getElementById("bgMusic");
+
+  container.classList.add("open");
+
+  // 🎵 play music ONLY on first open tap (Android safe)
+  if (!opened) {
+    music.play().catch(err => {
+      console.log("Music blocked until user interaction:", err);
+    });
+    opened = true;
+  }
+}
+</script>
+
+</body>
+</html><!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Love Letter 💌</title>
+
+<style>
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: system-ui, Arial;
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(135deg, #ffd1dc, #fff0f5);
+  overflow: hidden;
+}
+
+/* container */
+.container {
+  width: min(420px, 92vw);
+  height: 280px;
+  position: relative;
+}
+
+/* envelope */
+.envelope {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  border-radius: 16px;
+  background: #fff;
+  box-shadow: 0 20px 50px rgba(0,0,0,0.15);
+  overflow: hidden;
+  cursor: pointer;
+}
+
+/* flap */
+.flap {
+  position: absolute;
+  width: 100%;
+  height: 55%;
+  background: linear-gradient(135deg, #ff8fab, #ff4d6d);
+  clip-path: polygon(0 0, 100% 0, 50% 100%);
+  top: 0;
+  z-index: 3;
+  transition: transform 0.8s ease;
+}
+
+/* seal */
+.seal {
+  position: absolute;
+  top: 45%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 58px;
+  height: 58px;
+  border-radius: 50%;
+  background: radial-gradient(circle at 30% 30%, #ff2e63, #7a001f);
+  z-index: 4;
+  transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+/* letter */
+.letter {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  background: white;
+  padding: 18px;
+  transform: translateY(100%);
+  transition: transform 0.9s ease;
+  overflow-y: auto;
+  z-index: 2;
+}
+
+h1 {
+  font-size: 20px;
+  color: #d6336c;
+  margin-bottom: 10px;
+}
+
+p {
+  font-size: 14px;
+  line-height: 1.6;
+  color: #333;
+}
+
+/* OPEN STATE */
+.container.open .letter {
+  transform: translateY(0%);
+}
+
+.container.open .flap {
+  transform: translateY(-100%);
+}
+
+.container.open .seal {
+  opacity: 0;
+  transform: translate(-50%, -120%);
+}
+</style>
+</head>
+
+<body>
+
+<!-- 🎵 MUSIC -->
+<audio id="bgMusic" loop preload="auto">
+  <source src="https://cdn.pixabay.com/download/audio/2022/03/15/audio_d5f3e8b9f7.mp3?filename=romantic-love-ambient-112191.mp3" type="audio/mpeg">
+</audio>
+
+<div class="container" onclick="openLetter()">
+
+  <div class="envelope">
+    <div class="flap"></div>
+    <div class="seal"></div>
+
+         </p>
+    </div>
+
+  </div>
+</div>
+
+<script>
+let opened = false;
+
+function openLetter() {
+  const container = document.querySelector(".container");
+  const music = document.getElementById("bgMusic");
+
+  container.classList.add("open");
+
+  // 🎵 play music ONLY on first open tap (Android safe)
+  if (!opened) {
+    music.play().catch(err => {
+      console.log("Music blocked until user interaction:", err);
+    });
+    opened = true;
+  }
+}
+</script>
+
+</body>
+</html><!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Love Letter 💌</title>
+
+<style>
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: system-ui, Arial;
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(135deg, #ffd1dc, #fff0f5);
+  overflow: hidden;
+}
+
+/* container */
+.container {
+  width: min(420px, 92vw);
+  height: 280px;
+  position: relative;
+}
+
+/* envelope */
+.envelope {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  border-radius: 16px;
+  background: #fff;
+  box-shadow: 0 20px 50px rgba(0,0,0,0.15);
+  overflow: hidden;
+  cursor: pointer;
+}
+
+/* flap */
+.flap {
+  position: absolute;
+  width: 100%;
+  height: 55%;
+  background: linear-gradient(135deg, #ff8fab, #ff4d6d);
+  clip-path: polygon(0 0, 100% 0, 50% 100%);
+  top: 0;
+  z-index: 3;
+  transition: transform 0.8s ease;
+}
+
+/* seal */
+.seal {
+  position: absolute;
+  top: 45%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 58px;
+  height: 58px;
+  border-radius: 50%;
+  background: radial-gradient(circle at 30% 30%, #ff2e63, #7a001f);
+  z-index: 4;
+  transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+/* letter */
+.letter {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  background: white;
+  padding: 18px;
+  transform: translateY(100%);
+  transition: transform 0.9s ease;
+  overflow-y: auto;
+  z-index: 2;
+}
+
+h1 {
+  font-size: 20px;
+  color: #d6336c;
+  margin-bottom: 10px;
+}
+
+p {
+  font-size: 14px;
+  line-height: 1.6;
+  color: #333;
+}
+
+/* OPEN STATE */
+.container.open .letter {
+  transform: translateY(0%);
+}
+
+.container.open .flap {
+  transform: translateY(-100%);
+}
+
+.container.open .seal {
+  opacity: 0;
+  transform: translate(-50%, -120%);
+}
+</style>
+</head>
+
+<body>
+
+<!-- 🎵 MUSIC -->
+<audio id="bgMusic" loop preload="auto">
+  <source src="https://cdn.pixabay.com/download/audio/2022/03/15/audio_d5f3e8b9f7.mp3?filename=romantic-love-ambient-112191.mp3" type="audio/mpeg">
+</audio>
+
+<div class="container" onclick="openLetter()">
+
+  <div class="envelope">
+    <div class="flap"></div>
+    <div class="seal"></div>
+
+    <div class="letter">
+      <h1>My Love 💖</h1>
+      <p>
+        hey if u are reading this it means i have enough of waiting for u i am acting on my own and i cant message u direct pr i can make dedu send this to u and i can see the situation i dont know if you still love me i means idont know some times u say you do and sometimes you dont and also iwill not talk about kiski galti hai kiski nhi i will just say pyar ka to matlab he hai jukhna duniya ke samne aaj tk nhi jukha jukhunga bhi nhi pr apke samne bar bar jukhta hu or jukhta rhuga jb tk jaan hai i will not chose any other girl ever when i said u its u forever why would i do efforts for others girl i will never like and chose not to do for girl i love the most just because ego i really really missed you these days i really wanted toi tell you pr apne block mara hua tha mai krta bhi kya i dont know kya hua pr itni se choti si silly se ladai mai i dont want to ke apart with you we have sworn to be together na even after any ladai i remember u said ke aap mujhe mana liya krna har baar and you will always wait for me i know apko lga hoga ke meri galti hai mai apko manaunga pr i really wanted to see to feel how it feels kyunki mujhe to apne kbhi manaya he nhi sounds a little unfare na we are in love and equal partners mera bhi to hak hai na ke jb apko gussa aaya ho to bhi aap mujhe bolo ke its ok hum aram se baat kr lete hai i was a little jelous of those couples really ke aaisa bhi hota hai i have already told you ke meri sari expectations to apse he hai apka kya hai mai nhi to koi or to kr he dega pr i am not chossing anyone na i was fully devoted to you i still am if you dig deep down you will also understand ke why i was suddenly cold because i was sad you also felt this haina vrinda ke suddenly saddness and being cold to phir meri bari aaisa kyuu maine pyar nhi kiya apko?? sb se zayada krta hu apke papa se or jitne bhi ye apke aas pass ghumte hai unse sbse zayada you have seen me haina mai apse dur nhi hona chata i fully surrender i dont wanna ruin my precious relationship i dont wanna change partners i dopnt wanna chose someone else over you my fav person i can only stay up at nights for you can save money only for you i really really love you my life is colourless without you nahhhh there is no life for me without you colours ka mai kya he krunga i always wanna flood u with happiness and i always try pr meri overthinking ya reality icant bear my person talking to someone else to mood to kharab ho he jata hai na kya sach mai meri galti the ?? i remember last time we met you looked fablously goddess you kissed me and hatho mai hath dalke you said ke kuich bhi hoga you would only come to me you dont have to have anything with anyoen i felt iwon i wonm life now i just wanna be success for this woman my woman for the woman i am man of we really had such achi life and we indeed are soulmates we will end up together eventually i am sure my love isnt that weak we have such things in common like litersally activa ka number even that i dont think so we can be good better without eachother that much our relation is something iam sure is worth everything i just want your freedom i want to go every damn place on this freaking crule earth with my universe remember laddu paddu kaddu you then me i never told you but i have planted a rose plant named you to give you on a special day i water her every day its clossest to me when you werent here and mummy used to curse me i would go and talk to you my rose we are real soulmates itne time baad ek dusre ko mille hai lets not waste time i am really here to marry you arent you too our times yaad hai our dates soda after school and in school me wiping you paseena and keepinh my rumal because it has your pasena i would kiss it all damn day your paseena this much special you are in my life this is your real value and rtem,ember our cart date barish i was gussa from you because you said i am not your husband pr pta bhar bijli kadki and i thought meri pyari baby ka pet hai to istopped at a mall and took good stuff for my baby i will alway baby you no matter if i am gussa from you  and after all fights make us soulmates stronger this is how 11 10 12 years old relationships works na and they endup together aaj maybe aap chle bhhi jao i wont let it happen pr aais budhape walla pyar just sitting in our flower fields and watching laddus means our grandchildern its rare and also watching our photos where we have travelled telling stories of you beating me and me loving you i even kiss your insecurities no one was there but i was i kissed i stayed i loved and made you love them didnt i its means i wilkl stay doing whole work for you jb bimar hoge make you 40 types of soup akhir mere jaisa multitalanted handsome musculer master chef guitarist bar bar janem nhi lete waise na apke jaise ache goddess pyari beautiful goddess bar bar avatar leti hai see made for eachother akhir pyar mai ladna or is had tk ladna is important na vrinda spices oof life of love nhi to boring ho jayega i just wanna kiss you forehead and instead of you i wanna say i apologise its just one percent of the good times we have lived 10000000000 and we have infinity time more we have everything in common and comfortyable already bs apne aaj tk paada nhi mere samne ya pada ho or maine suna na ho or akhir meri mummy jaisi jo apke liye mujhe he peet de aaisi understanding aurat nhi hoti we love you and i love you most i will always chose your lips colour to write my evewry essay on you..<3 ye vo pink wala dil hai hjmara special wala aab kr bhi do unblock baat krlete hai ek dusre ka haal puchletehai i ma not doing so good here my mumma will understand btayatha na meri mummy isnt so good nowdays and i really have no one no one means no one really i know or cheeze krne pdegi apke liye abhi aap ladiezzzz hop na to krunga na i am a proud joru ka gul nonono proud vrinda ka ghulam apki galtui ya meri mai he manaunga or haan unblock krdo aaise problem hoti hai abhi to apko mna ne ke liye bohot gifts denehai mai apko manaunga bar bar bar hr bar apka he hu .<br><br>
+
+        💌 Always yours.
+      </p>
+    </div>
+
+  </div>
+</div>
+
+<script>
+let opened = false;
+
+function openLetter() {
+  const container = document.querySelector(".container");
+  const music = document.getElementById("bgMusic");
+
+  container.classList.add("open");
+
+  // 🎵 play music ONLY on first open tap (Android safe)
+  if (!opened) {
+    music.play().catch(err => {
+      console.log("Music blocked until user interaction:", err);
+    });
+    opened = true;
+  }
+}
+</script>
+
+</body>
+</html>.<br><br>
+
+        💌 Always yours.
+      </p>
+    </div>
+
+  </div>
+</div>
+
+<script>
+let opened = false;
+
+function openLetter() {
+  const container = document.querySelector(".container");
+  const music = document.getElementById("bgMusic");
+
+  container.classList.add("open");
+
+  // 🎵 play music ONLY on first open tap (Android safe)
+  if (!opened) {
+    music.play().catch(err => {
+      console.log("Music blocked until user interaction:", err);
+    });
+    opened = true;
+  }
+}
+</script>
+
+</body>
+</html>
